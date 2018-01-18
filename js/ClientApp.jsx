@@ -1,5 +1,5 @@
-import React from 'react'
-import { render } from 'react-dom'
+import React from 'react';
+import { render } from 'react-dom';
 
 const ce = React.createElement;
 
@@ -13,7 +13,7 @@ const MyFirstComponent = function() {
     { id: 'my-first-component' },
     ce(MyTitle, { title: 'Game of Thrones', color: 'GreenYellow' }),
     ce(MyTitle, { title: 'Stranger Things', color: 'LimeGreen' }),
-    ce(MyTitle, { title: 'Rick and Morty', color: 'peru' }),
+    ce(MyTitle, { title: 'The Americans', color: 'peru' }),
     ce(MyTitle, { title: 'Silicon Valley', color: 'YellowGreen' })
   );
 };
