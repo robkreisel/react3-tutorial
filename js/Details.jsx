@@ -10,7 +10,7 @@ const Details = (props: { show: Show }) => {
       <Header />
       <section>
         <h1>{title}</h1>
-        <h1>{year}</h1>
+        <h2>({year})</h2>
         <img src={`/public/img/posters/${poster}`} alt={`Poster for ${title}`} />
         <p>{description}</p>
       </section>
