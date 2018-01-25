@@ -8,7 +8,7 @@ const spin = keyframes`
         transform: rotate(0deg);
     }
     to {
-        tranform: rotate(360deg);
+        transform: rotate(360deg);
     }
 `;
 
