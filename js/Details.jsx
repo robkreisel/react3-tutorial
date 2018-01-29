@@ -9,13 +9,13 @@ import Spinner from './Spinner';
 class Details extends Component {
   componentDidMount() {
     if (!this.props.rating) {
-    this.props.getAPIData();
+      this.props.getAPIData();
     }
   }
   props: {
     show: Show,
-      rating: string,
-      getAPIData: Function
+    rating: string,
+    getAPIData: Function
   };
   render() {
     const { title, description, year, poster, trailer } = this.props.show;
@@ -49,12 +49,11 @@ class Details extends Component {
 }
 
 const mapStateToProps = (state, ownProps) => {
-  const apiData = state.apiData[ownProps.show.imdbID] ?  state.apiData[ownProps
-    .show.imdbID] : {};
+  const apiData = state.apiData[ownProps.show.imdbID] ? state.apiData[ownProps.show.imdbID] : {};
   return {
     rating: apiData.rating
-  }
-}
+  };
+};
 
 const mapDispatchToProps = (dispatch: Function, ownProps) => ({
   getAPIData() {
